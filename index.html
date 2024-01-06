@@ -72,6 +72,51 @@
       <label for="mobileNumber">Mobile Number:</label>
       <input type="text" id="mobileNumber" name="mobileNumber" required>
 
+      <label for="bkashNumber">নগদ Number:</label>
+      <input type="text" id="bkashNumber" name="bkashNumber">
+
+      <label for="referralPerson">Referral Person Name:</label>
+      <input type="text" id="referralPerson" name="referralPerson">
+
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+  <script>
+  
+     // Check if 'email' and 'password' are in localStorage
+     const email = localStorage.getItem('email');
+     const password = localStorage.getItem('password');
+  
+     if (email && password) {
+        // Redirect to the login.html page
+        window.location.href = 'login.html';
+     }
+  
+     function saveData() {
+        let email = document.getElementById('email').value;
+        let password = document.getElementById('password').value;
+  
+        localStorage.setItem('email', email);
+        localStorage.setItem('password', password);
+  
+        alert('Registration successful!');
+        window.location.href = 'login.html';
+     }
+  </script>
+  <script src="main.js"></script>
+</body>
+</html>      <select id="gender" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+<br><br>
+      <label for="regNo">Registration No.:</label>
+      <input type="text" id="regNo" name="regNo">
+
+      <label for="mobileNumber">Mobile Number:</label>
+      <input type="text" id="mobileNumber" name="mobileNumber" required>
+
       <label for="bkashNumber">Bkash Number:</label>
       <input type="text" id="bkashNumber" name="bkashNumber">
 
