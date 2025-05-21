@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family:"my";
+    background-color: #141423;
+  }
+  
+  header {
+    display: flex;
+    width: 100%;
+    background-color: #141423c6;
+    padding: 10px 0;
+    color: white;
+    position: fixed;
+    z-index: 1;
+    justify-content: center;
+  }
+
+  header div{
+    display: none;
+     color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background 0.3s;   
+  }
+
+      #menu{
+      display: none;
+    }
+  
+  nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background 0.3s;
+  }
+  
+  nav a:hover,
+  nav a.active {
+    background-color: #373f55;
+  }
+  
+
+  
+  @media (max-width: 900px) {
+    nav {
+      flex-direction: column;
+      width: 20%;
+    }
+      header div{
+    display: block;
+     color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background 0.3s;   
+  }
+  header{
+    justify-content: left;
+    display: block;
+  }
+  .hid{
+    display: none;
+  }
+  }
+  
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3%;
+    justify-content: center;
+    line-height: 0;
+  
+
+  }
+
+  .cards{
+     width: 300px;
+     margin-bottom: 3%;
+    height:auto;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+box-sizing: border-box;
+ transition: transform 0.2s ease;
+    text-decoration: none;
+    display: block;
+    vertical-align: bottom;
+  }
+  
+  .cards:hover {
+    transform: scale(1.05);
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .cardhome {
+     width: 100%;
+     margin-bottom: 3%;
+    height:auto;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+box-sizing: border-box;
+ transition: transform 0.2s ease;
+    text-decoration: none;
+    display: block;
+    vertical-align: bottom;
+  }
+
+@font-face {
+  font-family: 'my';
+  src: url('Fonts/Mplus.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
